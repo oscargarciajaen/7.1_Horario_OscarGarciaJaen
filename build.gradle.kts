@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("com.github.ajalt.mordant:mordant:2.7.1")
+    implementation("com.github.ajalt.mordant:mordant:2.4.0")
 }
 
 kotlin {
@@ -20,8 +20,4 @@ kotlin {
 
 tasks.test {
     useJUnitPlatform()
-}
-
-tasks.withType<JavaExec> {
-    jvmArgs("--enable-native-access=ALL-UNNAMED")
 }
